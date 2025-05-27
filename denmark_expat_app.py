@@ -392,27 +392,47 @@ def main():
         if gap_mode:
             st.write("⚠️ **Red markers:** Missing selected recommendations")
 
-    # Data table
-    st.subheader("Initiative Details")
-    if not df_filtered.empty:
-        # Add readable recommendation column
-        df_display = df_filtered.copy()
-        df_display['Recommendation Text'] = df_display['recommendation'].map(RECOMMENDATIONS)
+   # Data table
+st.subheader("Initiative Details")
 
-        # Reorder columns for display
-        display_cols = ['location', 'recommendation', 'Recommendation Text', 'program', 'organization', 'status']
-        st.dataframe(
-            df_display[display_cols].rename(columns={
-                'location': 'Location',
-                'recommendation': 'Rec ID',
-                'program': 'Program/Initiative',
-                'organization': 'Organization',
-                'status': 'Status'
-            }),
-            use_container_width=True
-        )
-    else:
-        st.write("No data to display with current filters.")
+if not df_filtered.empty:
+    # Add readable recommendation column
+    df_display = df_filtered.copy()
+    df_display['Recommendation Text'] = df_display['recommendation'].map(RECOMMENDATIONS)
+
+    # Function to generate clickable HTML table
+    def generate_html_table(df, hyperlinks):
+        rows = []
+        header = "<tr><th>Location</th><th>Rec ID</th><th>Recommendation</th><th>Program</th><th>Organization</th><th>Status</th></tr>"
+        rows.append(header)
+
+        for _, row in df.iterrows():
+            program = row['program']
+            link = hyperlinks.get(program)
+            program_display = f'<a href="{link}" target="_blank">{program}</a>' if link else program
+
+            html_row = (
+                f"<tr>"
+                f"<td>{row['location']}</td>"
+                f"<td>{row['recommendation']}</td>"
+                f"<td>{RECOMMENDATIONS[row['recommendation']]}</td>"
+                f"<td>{program_display}</td>"
+                f"<td>{row['organization']}</td>"
+                f"<td>{row['status']}</td>"
+                f"</tr>"
+            )
+            rows.append(html_row)
+
+        html_table = "<table style='width:100%; border-collapse: collapse;' border='1'>" + "".join(rows) + "</table>"
+        return html_table
+
+    # Generate and display the table
+    html_table = generate_html_table(df_display, hyperlink_data)
+    st.markdown(html_table, unsafe_allow_html=True)
+
+else:
+    st.write("No data to display with current filters.")
+
 
     # Quick stats
     st.subheader("Quick Stats")
