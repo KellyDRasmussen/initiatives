@@ -1,4 +1,5 @@
-🇩🇰 Denmark International Talent Initiatives Map
+## 🇩🇰 Denmark International Talent Initiatives Map
+
 An interactive Streamlit app mapping international talent retention initiatives across Danish municipalities, based directly on the Copenhagen Capacity 2025 Expat Survey official recommendations.
 
 
