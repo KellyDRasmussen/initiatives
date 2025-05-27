@@ -1,6 +1,21 @@
 🇩🇰 Denmark International Talent Initiatives Map
 An interactive Streamlit app mapping international talent retention initiatives across Danish municipalities, based directly on the Copenhagen Capacity 2025 Expat Survey official recommendations.
-Show Image Show Image Show Image
+
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![AI Powered](https://img.shields.io/badge/AI_Powered-00D4AA?style=for-the-badge&logo=openai&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude-5319E7?style=for-the-badge&logo=ai&logoColor=white)
+![Perplexity](https://img.shields.io/badge/Perplexity-1E293B?style=for-the-badge&logo=search&logoColor=white)
+
+
+## 📍 Live Demo
+
+Explore the interactive map of Denmark’s international talent initiatives:
+
+🔗 [international-initiatives-dk.streamlit.app](https://international-initiatives-dk.streamlit.app)
+
+
 🚀 What This App Does
 
 Interactive map showing 100+ initiatives across 25+ Danish cities
