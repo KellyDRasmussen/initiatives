@@ -73,6 +73,19 @@ hyperlink_data = dict(zip(hyperlinks_df["program"], hyperlinks_df["url"]))
 
     
 def create_map(df_filtered, show_schools=True, gap_mode=False, selected_recs=None):
+# Font Awesome icon mapping by recommendation
+ICON_MAP = {
+    '1a': 'briefcase',
+    '1b': 'search',
+    '2a': 'graduation-cap',
+    '2b': 'language',
+    '3':  'heart',
+    '4a': 'home',
+    '4b': 'school'
+}
+
+
+    
     """Create folium map with filtered data"""
     m = folium.Map(location=[56.0, 10.0], zoom_start=7)
     
@@ -102,13 +115,19 @@ def create_map(df_filtered, show_schools=True, gap_mode=False, selected_recs=Non
                 popup_text = f"<b>{city}</b><br><br>⚠️ <b>Missing:</b><br>"
                 for rec in missing_recs:
                     popup_text += f"• {rec}<br>"
-                
+
+                rec_id = other_initiatives.iloc[0]['recommendation']
+                icon_name = ICON_MAP.get(rec_id, 'info-sign')
+
                 folium.Marker(
                     [lat, lon],
                     popup=folium.Popup(html=f"<div style='max-height:200px; overflow-y:auto;'>{popup_text}</div>", max_width=300),
-                    tooltip=f"{city} (Missing {len(selected_recs)} recommendations)",
-                    icon=folium.Icon(color='red', icon='exclamation-sign')
+                    tooltip=f"{location} ({len(other_initiatives)} initiatives)",
+                    icon=folium.Icon(color=color, icon=icon_name, prefix='fa')
                 ).add_to(m)
+
+                
+
     
     # Regular markers for cities with initiatives
     if not gap_mode:
@@ -297,13 +316,13 @@ def main():
         for cat, color in category_colors.items():
             if any(rec.startswith(cat) for rec in selected_recs):
                 cat_name = category_names[cat]
-                st.write(f"🔵 **Category {cat}:** {cat_name}")
+                st.write(f" **Category {cat}:** {cat_name}")
 
         if show_schools:
-            st.write("🏫 **Green markers:** International Schools")
+            st.write("🏫 International Schools")
 
         if gap_mode:
-            st.write("⚠️ **Red markers:** Missing selected recommendations")
+            st.write("⚠️  Missing selected recommendations")
 
    
 
