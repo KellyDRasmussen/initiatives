@@ -73,41 +73,33 @@ hyperlink_data = dict(zip(hyperlinks_df["program"], hyperlinks_df["url"]))
 
     
 def create_map(df_filtered, show_schools=True, gap_mode=False, selected_recs=None):
-# Font Awesome icon mapping by recommendation
-ICON_MAP = {
-    '1a': 'briefcase',
-    '1b': 'search',
-    '2a': 'graduation-cap',
-    '2b': 'language',
-    '3':  'heart',
-    '4a': 'home',
-    '4b': 'school'
-}
-
-
-    
     """Create folium map with filtered data"""
+    
+    # Font Awesome icon mapping by recommendation
+    ICON_MAP = {
+        '1a': 'briefcase',
+        '1b': 'search',
+        '2a': 'graduation-cap',
+        '2b': 'language',
+        '3':  'heart',
+        '4a': 'home',
+        '4b': 'school'
+    }
+
     m = folium.Map(location=[56.0, 10.0], zoom_start=7)
     
     if gap_mode and selected_recs:
-        # Gap mode: show cities that DON'T have selected recommendations
-        all_cities = set(CITY_COORDS.keys()) - {'National'}  # Exclude National
-        
-        # Find cities that have ANY of the selected recommendations
+        all_cities = set(CITY_COORDS.keys()) - {'National'}
         df_full, _ = load_data()
 
         cities_with_any_selected_rec = set()
         for rec in selected_recs:
             cities_with_rec = set(df_full[df_full['recommendation'] == rec]['location'].unique())
             cities_with_any_selected_rec.update(cities_with_rec)
-        
-        # Remove 'National' if it somehow got in there
+
         cities_with_any_selected_rec.discard('National')
-        
-        # Cities missing ALL selected recommendations
         missing_cities = all_cities - cities_with_any_selected_rec
-        
-        # Add red markers for cities missing the selected recommendations
+
         for city in missing_cities:
             if city in CITY_COORDS:
                 lat, lon = CITY_COORDS[city]
@@ -116,33 +108,23 @@ ICON_MAP = {
                 for rec in missing_recs:
                     popup_text += f"• {rec}<br>"
 
-                rec_id = other_initiatives.iloc[0]['recommendation']
-                icon_name = ICON_MAP.get(rec_id, 'info-sign')
-
                 folium.Marker(
                     [lat, lon],
                     popup=folium.Popup(html=f"<div style='max-height:200px; overflow-y:auto;'>{popup_text}</div>", max_width=300),
-                    tooltip=f"{location} ({len(other_initiatives)} initiatives)",
-                    icon=folium.Icon(color=color, icon=icon_name, prefix='fa')
+                    tooltip=f"{city} (Missing {len(selected_recs)} recommendations)",
+                    icon=folium.Icon(color='red', icon='exclamation-sign')
                 ).add_to(m)
 
-                
-
-    
-    # Regular markers for cities with initiatives
     if not gap_mode:
-        # Group by location to avoid duplicate markers
         location_groups = df_filtered.groupby('location')
-        
+
         for location, group in location_groups:
             if location in CITY_COORDS:
                 lat, lon = CITY_COORDS[location]
-                
-                # Separate schools from other initiatives
+
                 schools = group[group['program'].str.contains('School|skole', case=False, na=False)]
                 other_initiatives = group[~group['program'].str.contains('School|skole', case=False, na=False)]
-                
-                # Main marker for non-school initiatives
+
                 if not other_initiatives.empty:
                     popup_text = f"<b>{location}</b><br><br>"
                     for _, row in other_initiatives.iterrows():
@@ -150,32 +132,33 @@ ICON_MAP = {
                         popup_text += f"• <b>{row['program']}</b><br>"
                         popup_text += f"  {rec_text}<br>"
                         popup_text += f"  <i>{row['organization']}</i><br><br>"
-                    
-                    # Use color of first recommendation for the marker
-                    color = REC_COLORS[other_initiatives.iloc[0]['recommendation']]
-                    
+
+                    rec_id = other_initiatives.iloc[0]['recommendation']
+                    color = REC_COLORS.get(rec_id, 'gray')
+                    icon_name = ICON_MAP.get(rec_id, 'info-sign')
+
                     folium.Marker(
                         [lat, lon],
                         popup=folium.Popup(html=f"<div style='max-height:200px; overflow-y:auto;'>{popup_text}</div>", max_width=300),
                         tooltip=f"{location} ({len(other_initiatives)} initiatives)",
-                        icon=folium.Icon(color=color, icon='info-sign')
+                        icon=folium.Icon(color=color, icon=icon_name, prefix='fa')
                     ).add_to(m)
-                
-                # School markers (if enabled)
+
                 if show_schools and not schools.empty:
                     school_popup = f"<b>{location} - International Schools</b><br><br>"
                     for _, row in schools.iterrows():
                         school_popup += f"🏫 <b>{row['program']}</b><br>"
                         school_popup += f"   {row['organization']}<br><br>"
-                    
+
                     folium.Marker(
-                        [lat + 0.02, lon + 0.02],  # Slight offset to avoid overlap
+                        [lat + 0.02, lon + 0.02],
                         popup=folium.Popup(html=f"<div style='max-height:200px; overflow-y:auto;'>{school_popup}</div>", max_width=300),
                         tooltip=f"{location} ({len(schools)} schools)",
                         icon=folium.Icon(color='blue', icon='home')
                     ).add_to(m)
-    
+
     return m
+
 
 def main():
     st.title("🇩🇰 Denmark International Talent Initiatives")
