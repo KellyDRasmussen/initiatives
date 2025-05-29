@@ -45,9 +45,10 @@ RECOMMENDATIONS = {
     '1b': "Job market accessibility - Job portals with relevant jobs", 
     '2a': "International students - Career services",
     '2b': "International students - Integration resources",
-    '3a': "Inclusion and belonging - Onboarding programs",
-    '3b': "Inclusion and belonging - More social events",
-    '3c': "Inclusion and belonging - Encourage cultural engagement",
+    '3': "Inclusion and belonging",
+    #'3a': "Inclusion and belonging - Onboarding programs",
+    #'3b': "Inclusion and belonging - More social events",
+    #'3c': "Inclusion and belonging - Encourage cultural engagement",
     '4a': "Spouses/partners & family - Job opportunities",
     '4b': "Spouses/partners & family - Inclusive education for children"
 }
@@ -56,7 +57,7 @@ RECOMMENDATIONS = {
 REC_COLORS = {
     '1a': 'blue', '1b': 'lightblue',
     '2a': 'darkgreen', '2b': 'lightgreen',
-    '3a': 'orange', '3b': 'lightred', '3c': 'darkred',
+    '3': 'orange', 
     '4a': 'purple', '4b': 'pink'
 }
 
@@ -80,7 +81,8 @@ def create_map(df_filtered, show_schools=True, gap_mode=False, selected_recs=Non
         all_cities = set(CITY_COORDS.keys()) - {'National'}  # Exclude National
         
         # Find cities that have ANY of the selected recommendations
-        df_full = load_data()  # Use full dataset, not filtered
+        df_full, _ = load_data()
+
         cities_with_any_selected_rec = set()
         for rec in selected_recs:
             cities_with_rec = set(df_full[df_full['recommendation'] == rec]['location'].unique())
@@ -240,7 +242,7 @@ def main():
         st.write("**Copenhagen Capacity's 4 Official Areas:**")
         st.write("1. **Job Market Accessibility** (1a-1b)")
         st.write("2. **International Students** (2a-2b)")  
-        st.write("3. **Inclusion & Belonging** (3a-3c)")
+        st.write("3. **Inclusion & Belonging**")
         st.write("4. **Spouses/Partners & Family** (4a-4b)")
         
         # Region coverage summary
@@ -298,7 +300,7 @@ def main():
                 st.write(f"🔵 **Category {cat}:** {cat_name}")
 
         if show_schools:
-            st.write("🏫 **Blue markers:** International Schools")
+            st.write("🏫 **Green markers:** International Schools")
 
         if gap_mode:
             st.write("⚠️ **Red markers:** Missing selected recommendations")

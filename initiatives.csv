@@ -1,6 +1,6 @@
 location,recommendation,program,organization,status
 National,1a,Workindenmark/EURES,Government/EU partnership,Active
-National,3b,Welcome September,Life in Denmark,Active
+National,3,Welcome September,Life in Denmark,Active
 National,2a,Young Professionals in Denmark,Confederation of Danish Industry,Active
 National,2a,Student Job Portals,Workindenmark,Active
 National,4a,SIRI Family Member Support,Danish Agency for International Recruitment,Active
@@ -23,48 +23,48 @@ Aarhus,1a,Employer Outreach & Awareness Campaigns,Erhverv Aarhus,Active
 Aarhus,2a,Talent to a Green Denmark,Studenterhus Aarhus,Active (2023-2025)
 Aarhus,2b,University-Business Talent Partnerships,Aarhus University,Active
 Aarhus,2a,AU Student Job Fair,Aarhus University,Active
-Aarhus,3a,Aarhus City Welcome,Municipality,Active
-Aarhus,3a,International Employment Unit Onboarding,Jobcenter Aarhus,Active
+Aarhus,3,Aarhus City Welcome,Municipality,Active
+Aarhus,3,International Employment Unit Onboarding,Jobcenter Aarhus,Active
 Aarhus,4a,AU Expat Partner Programme,Aarhus University,Active
 Aarhus,4a,International Employment Unit Partner Support,Jobcenter Aarhus,Active
 Aarhus,4b,Aarhus International School,Private School,Active
-Aarhus,3b,Aarhus City Welcome Events,Municipality,Active
-Aarhus,3b,International Community Events,Erhverv Aarhus,Active
-Aarhus,3b,Studenterhus Aarhus Social Programs,Studenterhus Aarhus,Active
-Aarhus,3b, Genlyd Aarhus, Municipality, Active
-Aarhus,3c,Sports Integration Initiatives,Municipality & Sports Clubs,Active
-Aarhus,3c,Cultural Clubs Integration,Municipality & NGOs,Active
-Odense,3a,International Community Odense,City of Odense,Active
+Aarhus,3,Aarhus City Welcome Events,Municipality,Active
+Aarhus,3,International Community Events,Erhverv Aarhus,Active
+Aarhus,3,Studenterhus Aarhus Social Programs,Studenterhus Aarhus,Active
+Aarhus,3, Genlyd Aarhus, Municipality, Active
+Aarhus,3,Sports Integration Initiatives,Municipality & Sports Clubs,Active
+Aarhus,3,Cultural Clubs Integration,Municipality & NGOs,Active
+Odense,3,International Community Odense,City of Odense,Active
 Odense,1b,IT and Academic Job Fair,Jobcenter Odense,Active
 Odense,2a,SDU Career Services,University of Southern Denmark,Active
 Odense,4b,Henriette Hørlücks Skole,Private School,Active
 Odense,4a,Host Programme,Odense Kommune,Active
 Aalborg,1a,International House North Denmark,IHND (Municipal/Regional),Active
-Aalborg,3a,IHND Onboarding Services,IHND,Active
+Aalborg,3,IHND Onboarding Services,IHND,Active
 Aalborg,4a,IHND Spouse Support,IHND,Active
 Aalborg,2b,University/Business Network Collaboration,Invest in Aalborg,Active
-Aalborg,3b,Welcome September,Local Municipality,Active
+Aalborg,3,Welcome September,Local Municipality,Active
 Aalborg,2a,University Career Centre,Aalborg University,Active
 Aalborg,2b,Internship Programmes,Aalborg University,Active
 Aalborg,4b,Skipper Clement Skolen,Private School,Active
 Esbjerg,1a,Jobcenter & EURES Collaboration,Local Jobcenter,Active
 Esbjerg,2b,University-Company Integration,University of Southern Denmark,Active
-Esbjerg,3b,Welcome September,Local Municipality,Active
+Esbjerg,3,Welcome September,Local Municipality,Active
 Esbjerg,4b,Esbjerg International School,Private School,Active
 Esbjerg,4a,Settling-in Coordinator,Municipality,Active
-Maribo,3b,International Welcome Fund,Lolland Kommune,Active
-Maribo,3a,Healthcare Professionals Program,Lolland Kommune,Active
+Maribo,3,International Welcome Fund,Lolland Kommune,Active
+Maribo,3,Healthcare Professionals Program,Lolland Kommune,Active
 Maribo,4b,Lolland International School,Public School,Active
 Kalundborg,1a,Virksomhedsforum,Kalundborg Jobcenter,Active
-Kalundborg,3b,Liv i Kalundborg,Business Council,Active
+Kalundborg,3,Liv i Kalundborg,Business Council,Active
 Kolding,1a,International Policy Framework,Kolding Kommune,Active
-Kolding,3a,International Policy Framework,Kolding Kommune,Active
+Kolding,3,International Policy Framework,Kolding Kommune,Active
 Hellerup,4b,Bernadotteskolen,Private School,Active
 Hellerup,4b,International School of Hellerup,Private School,Active
 Hellerup,4b,Rygaards Skole,Private School,Active
 Frederiksberg,4b,Prins Henriks skole,Private School,Active
 Frederiksberg,1a,Inclusive Municipal Hiring,Municipality,Active
-Frederiksberg,3b,CPH STAGE Festival,Event Organizations,Active
+Frederiksberg,3,CPH STAGE Festival,Event Organizations,Active
 Frederiksberg,2a,Career Kick Start (coverage),University of Copenhagen,Active
 Roskilde,4b,Skt. Josef's International School,Private School,Active
 Roskilde,2a,Roskilde University Career Services,Roskilde University,Active
@@ -72,7 +72,7 @@ Sønderborg,4b,Sønderborg International School,Private School,Active
 Sønderborg,4a,SDU Spouse Support,University of Southern Denmark,Active
 Billund,4b,International School of Billund,Private School,Active
 Billund,4a,LEGO Family Programme,LEGO Group,Active
-Billund,3a,LEGO Family Onboarding,LEGO Group,Active
+Billund,3,LEGO Family Onboarding,LEGO Group,Active
 Ikast,4b,International School Ikast-Brande,Private School,Active
 Viborg,4b,Viborg private Realskole,Private School,Active
 Viborg,2a,VIA University Partnerships,VIA University,Active
