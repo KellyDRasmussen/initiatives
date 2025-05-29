@@ -19,7 +19,7 @@ Explore the interactive map of Denmark’s international talent initiatives:
 
 # 🚀 What This App Does
 
-* Interactive map showing 100+ initiatives across 25+ Danish cities
+* Interactive map showing 100+ initiatives across 18 Danish cities
 * Copenhagen Capacity framework: Organized by their 4 official recommendation categories
 * Gap analysis mode: Shows cities missing specific recommendations (red markers)
 * Coverage dashboard: Real-time stats on national/regional implementation
