@@ -15,29 +15,29 @@ st.set_page_config(
 
 
 CITY_COORDS = {
-    'Copenhagen': [55.6761, 12.5683],
+    'Aalborg': [57.048, 9.9187],
     'Aarhus': [56.1629, 10.2039],
-    'Odense': [55.4038, 10.4024],
-    'Kalundborg': [55.6794, 11.0888],
-    'Kolding': [55.4904, 9.4719],
-    'Aalborg': [57.0488, 9.9217],
-    'Esbjerg': [55.4700, 8.4520],
-    'Horsens': [55.8607, 9.8500],
-    'Hellerup': [55.7267, 12.5700],
-    'Frederiksberg': [55.6867, 12.5339],
-    'Roskilde': [55.6415, 12.0803],
-    'Hørsholm': [55.8817, 12.4983],
-    'Næstved': [55.2297, 11.7603],
-    'Sønderborg': [54.9089, 9.7927],
     'Billund': [55.7308, 9.1153],
-    'Ikast': [56.1386, 9.1575],
-    'Holbæk': [55.7167, 11.7167],
-    'Viborg': [56.4533, 9.4017],
-    'Maribo': [54.7719, 11.5008],
-    'Nordhavn': [55.7061, 12.5914],
-    'Vejle': [55.7058, 9.5378],
-    'National': [56.2639, 9.5018]
+    'Bornholm': [55.1042, 14.7065],  # Assuming Rønne as main location
+    'Copenhagen': [55.6761, 12.5683],
+    'Esbjerg': [55.4765, 8.4594],
+    'Fredericia': [55.5657, 9.7526],
+    'Frederiksberg': [55.6796, 12.5346],
+    'Hellerup': [55.7333, 12.5833],
+    'Horsens': [55.8607, 9.8503],
+    'Ikast': [56.1374, 9.1577],
+    'Ikast-Brande': [56.0866, 9.2453],
+    'Kolding': [55.4904, 9.4722],
+    'Maribo': [54.7761, 11.5019],
+    'National': [56.0000, 10.0000],  # Placeholder for national-level programs
+    'Odense': [55.4038, 10.4024],
+    'Roskilde': [55.6415, 12.0803],
+    'Sønderborg': [54.9132, 9.7924],
+    'Vejle': [55.7113, 9.5364],
+    'Viborg': [56.4522, 9.4044],
+    'Ringkøbing-Skjern': [56.0833, 8.2500]
 }
+
 
 # Copenhagen Capacity recommendation mapping 
 RECOMMENDATIONS = {
