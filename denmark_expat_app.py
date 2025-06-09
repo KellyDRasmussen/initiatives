@@ -27,6 +27,7 @@ CITY_COORDS = {
     'Horsens': [55.8607, 9.8503],
     'Ikast': [56.1374, 9.1577],
     'Ikast-Brande': [56.0866, 9.2453],
+    'Kalundborg': [55.6864, 11.0892],
     'Kolding': [55.4904, 9.4722],
     'Maribo': [54.7761, 11.5019],
     'National': [56.0000, 10.0000],  # Placeholder for national-level programs
