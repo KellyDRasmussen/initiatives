@@ -9,13 +9,13 @@ Aalborg,3,International Aalborg,Community-led,Active
 Aalborg,1a,International House North Denmark,IHND (Municipal/Regional),Active
 Aalborg,3,International Network Aalborg,Community-led,Active
 Aalborg,2b,Internship Programmes,Aalborg University,Active
-Aalborg,3,Nordkraft,City of Aalborg,Active
+Aalborg,3,Nordkraft,Municipality,Active
 Aalborg,4b,Skipper Clement Skolen,Private School,Active
 Aalborg,3,Spouse Space,International House North Denmark,Active
 Aalborg,2a,University Career Centre,Aalborg University,Active
 Aalborg,2b,University/Business Network Collaboration,Invest in Aalborg,Active
 Aalborg,3,WORLD! Aalborg,Community-led,Active
-Aalborg,3,Welcome September,Local Municipality,Active
+Aalborg,3,Welcome September,Municipality,Active
 Aarhus,3, Genlyd Aarhus, Municipality, Active
 Aarhus,4a,AU Expat Partner Programme,Aarhus University,Active
 Aarhus,2a,AU Student Job Fair,Aarhus University,Active
@@ -36,8 +36,9 @@ Aarhus,2b,University-Business Talent Partnerships,Aarhus University,Active
 Aarhus,1a,Work & Study Programme (Computer Science),Aarhus University,Pilot (2025-2027)
 Billund,4b,International School of Billund,Private School,Active
 Billund,3,LEGO Family Onboarding,LEGO Group,Active
+Billund,3,nabo,Private Company,Active
 Billund,4a,LEGO Family Programme,LEGO Group,Active
-Bornholm,3,Newcomer Service Bornholm,Bornholm Regional Municipality,Active
+Bornholm,3,Newcomer Service Bornholm,Municipality,Active
 Copenhagen,2a,Career Kick Start,University of Copenhagen,Active
 Copenhagen,2b,Company Thesis Collaboration,Universities & Employers,Active
 Copenhagen,4a,Copenhagen Career Program for Spouses,Municipality,Active
@@ -57,7 +58,7 @@ Esbjerg,4b,Esbjerg International School,Private School,Active
 Esbjerg,1a,Jobcenter & EURES Collaboration,Local Jobcenter,Active
 Esbjerg,4a,Settling-in Coordinator,Municipality,Active
 Esbjerg,2b,University-Company Integration,University of Southern Denmark,Active
-Esbjerg,3,Welcome September,Local Municipality,Active
+Esbjerg,3,Welcome September,Municipality,Active
 Fredericia,3,Fredericia Internationals & Friends,Community-led,Active
 Frederiksberg,3,CPH STAGE Festival,Event Organizations,Active
 Frederiksberg,2a,Career Kick Start (coverage),University of Copenhagen,Active
@@ -72,42 +73,43 @@ Ikast-Brande,3,Expat in Herning & Ikast-Brande,Expat in Herning & Ikast-Brande,A
 Ikast-Brande,3,I.D.E.N (International & Digital Entrepreneurship Network),I.D.E.N,Active
 Ikast-Brande,3,International Society Herning & Ikast-Brande,International Society,Active
 Kalundborg,3,SYMB,Community-led,Active
-Kalundborg,3,Kalundborg Connect,Kalundborg Kommune,Active
-Kolding,1a,International Policy Framework,Kolding Kommune,Active
-Kolding,3,International Policy Framework,Kolding Kommune,Active
+Kalundborg,3,Kalundborg Connect,Municipality,Active
+Kolding,1a,International Policy Framework,Municipality,Active
+Kolding,3,International Policy Framework,Municipality,Active
 Kolding,3,Kolding International Community,Community-led,Active
 Kolding,2a,SDU Career Services,University of Southern Denmark,Active
 Kolding,3,The Expats Association of Kolding (TEAK),TEAK,Active
-Maribo,3,Healthcare Professionals Program,Lolland Kommune,Active
+Maribo,3,Healthcare Professionals Program,Municipality,Active
 Maribo,3,International Community Lolland-Falster (ICLF),ICLF,Active
-Maribo,3,International Welcome Fund,Lolland Kommune,Active
-Maribo,3,Lolland International Ambassadors,Lolland Kommune,Active
+Maribo,3,International Welcome Fund,Municipality,Active
+Maribo,3,Lolland International Ambassadors,Municipality,Active
 Maribo,4b,Lolland International School,Public School,Active
 National,4a,Relocare Spouse Job Search,Private Relocation Services,Active
 National,4a,SIRI Family Member Support,Danish Agency for International Recruitment,Active
 National,2a,Student Job Portals,Workindenmark,Active
 National,3,Welcome September,Life in Denmark,Active
+National,3,nabo,Private Company,Active
 National,1a,Workindenmark/EURES,Government/EU partnership,Active
 National,2a,Young Professionals in Denmark,Confederation of Danish Industry,Active
 National,3,InDe,Community-led,Active
 Odense,4a,For accompanying partners,City of Odense,Active
 Odense,4b,Henriette Hørlücks Skole,Private School,Active
-Odense,4a,Host Programme,Odense Kommune,Active
+Odense,4a,Host Programme,Municipality,Active
 Odense,1b,IT and Academic Job Fair,Jobcenter Odense,Active
-Odense,3,International Community Odense,City of Odense,Active
+Odense,3,International Community Odense,Municipality,Active
 Odense,2a,SDU Career Services,University of Southern Denmark,Active
 Roskilde,2a,Roskilde University Career Services,Roskilde University,Active
 Roskilde,4b,Skt. Josef's International School,Private School,Active
 Sønderborg,4a,SDU Spouse Support,University of Southern Denmark,Active
 Sønderborg,4b,Sønderborg International School,Private School,Active
-Sønderborg,3,International Citizen Service (ICS) Sønderborg,National Authorities,Active
-Sønderborg,3,Newcomer Service Sønderborg,Sønderborg Kommune,Active
+Sønderborg,3,International Citizen Service (ICS) Sønderborg,Municipality,Active
+Sønderborg,3,Newcomer Service Sønderborg,Municipality,Active
 Sønderborg,3,Newcomers Network Sønderborg,Community-led,Active
-Sønderborg,2a,PartnerJob Program,Sønderborg Kommune,Active
+Sønderborg,2a,PartnerJob Program,Municipality,Active
 Vejle,3,A Beer or Two,Community-led,Active
-Vejle,3,DareGender Men's Group Vejle,DareGender,Active
+Vejle,3,DareGender Men's Group Vejle,Community-led,Active
 Vejle,4b,International Moms Group Triangle Region,Community-led,Active
-Vejle,3,Internationals in Vejle,Internationals in Vejle,Active
+Vejle,3,Internationals in Vejle,Community-led,Active
 Vejle,4b,Mothering the Mother: Vejle,Community-led,Active
 Vejle,4a,Spouse House Vejle,Community-led,Active
 Vejle,4a,The Better Halves Club,Community-led,Active
@@ -117,5 +119,5 @@ Viborg,2a,VIA University Partnerships,VIA University,Active
 Viborg,3,Viborg International Community,Community-led,Active
 Viborg,4b,Viborg private Realskole,Private School,Active
 Ringkøbing-Skjern,3,Internationals Ringkøbing-Skjern, Community-led, Active
-Ringkøbing-Skjern,3,Ringkøbing-Skjern Welcome, Ringkøbing-Skjern Kommune, Active
-Ringkøbing-Skjern,3, Flyt mod vest, Ringkøbing-Skjern Kommune, Active
+Ringkøbing-Skjern,3,Ringkøbing-Skjern Welcome,Municipality, Active
+Ringkøbing-Skjern,3, Flyt mod vest,Municipality, Active
